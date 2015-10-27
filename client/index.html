@@ -9,14 +9,23 @@
     <div id="shows">
         <form id="addShow" action="#">
             <label for="title">Title: </label><input id="title" type="text" />
-            <label for="genre">Author: </label><input id="author" type="text" />
-            <label for="stars">Keywords: </label><input id="keywords" type="text" />
+            <label for="genre">Genre: </label><input id="genre" type="text" />
+            <label for="stars">Stars: </label><input id="stars" type="text" />
             <button id="add">Add</button>
         </form>
+      <div class="showContainer">
+        <img src="img/placeholder.png"/>
+          <ul>
+            <li>Gilmore Girls</li>
+            <li>Drama</li>
+            <li>October 5, 2000</li>
+            <li>★★★★★</li>
+          </ul>
+        </div>
+      <script id="showTemplate" type="text/template">
+      <!-- replace the sample above with a template -->
+      </script>
     </div>
-    <script id="showTemplate" type="text/template">
-
-    </script>
         <script src="js/lib/jquery.min.js"></script>
         <script src="js/lib/underscore-min.js"></script>
         <script src="js/lib/backbone-min.js"></script>
