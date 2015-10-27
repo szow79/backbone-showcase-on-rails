@@ -1,9 +1,20 @@
-1. In views/show.js, what is the el property for an instance of ShowView?
+1. What is the ~/.railsrc file for?
 
-2. Why do we return this at the end of the render function in a view?
+2. What is a closure in JavaScript? How do you create a closure in Ruby?
 
-3. Describe the purpose and function of an Underscore template in Backbone.
+3. What is a serializer in Rails API and why do we need it?
 
-4. What's the point of var app = app || {} at the beginning of every .js file?
+4. Does Backbone have two-way data binding? Explain. 
 
-5. Why do we not need a template for the ShowcaseView in views/showcase.js?
+5. In views/show.js, what is the el property for an instance of ShowView?
+
+6. Why do we return this at the end of the render function in a view?
+
+7. Describe the purpose and function of an Underscore template in Backbone.
+
+8. What's the point of var app = app || {} at the beginning of every .js file?
+
+9. Why do we not need a template for the ShowcaseView in views/showcase.js?
+
+10. Go to line 248 of backbone.js and take a look at the Backbone.Model
+definition. What is the _.extend statement on line 262 for?
