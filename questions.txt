@@ -1,0 +1,9 @@
+1. In views/show.js, what is the el property for an instance of ShowView?
+
+2. Why do we return this at the end of the render function in a view?
+
+3. Describe the purpose and function of an Underscore template in Backbone.
+
+4. What's the point of var app = app || {} at the beginning of every .js file?
+
+5. Why do we not need a template for the ShowcaseView in views/showcase.js?

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Backbone.js Showcase</title>
+        <link rel="stylesheet" href="css/screen.css">
+    </head>
+    <body>
+    <div id="shows">
+        <form id="addShow" action="#">
+            <label for="title">Title: </label><input id="title" type="text" />
+            <label for="genre">Author: </label><input id="author" type="text" />
+            <label for="stars">Keywords: </label><input id="keywords" type="text" />
+            <button id="add">Add</button>
+        </form>
+    </div>
+    <script id="showTemplate" type="text/template">
+
+    </script>
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/backbone-min.js"></script>
+        <script src="js/lib/backbone-localstorage-min.js"></script>
+        <script src="js/models/show.js"></script>
+        <script src="js/collections/Showcase.js"></script>
+        <script src="js/views/show.js"></script>
+        <script src="js/views/Showcase.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
