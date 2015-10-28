@@ -1,12 +1,17 @@
 1. What is the ~/.railsrc file for?
+  It's used for configuring rails application
 
 2. What is a closure in JavaScript? How do you create a closure in Ruby?
+  Closure in JS wraps functions or variables inside another function. Making them unavailable outside of scope. In ruby we can use module or class to enclose.
 
 3. What is a serializer in Rails API and why do we need it?
+  Serializer formats the data into desired structure for client.
 
-4. Does Backbone have two-way data binding? Explain. 
+4. Does Backbone have two-way data binding? Explain.
+  Yes. The official site says to avoid it, but that would seem to imply it's possible. Two-way binding would be when the data is changeable from either the server or clients end.
 
 5. In views/show.js, what is the el property for an instance of ShowView?
+
 
 6. Why do we return this at the end of the render function in a view?
 
@@ -16,5 +21,4 @@
 
 9. Why do we not need a template for the ShowcaseView in views/showcase.js?
 
-10. Go to line 248 of backbone.js and take a look at the Backbone.Model
-definition. What is the _.extend statement on line 262 for?
+10. Go to line 248 of backbone.js and take a look at the Backbone.Model definition. What is the _.extend statement on line 262 for?

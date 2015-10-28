@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Backbone.js Showcase</title>
-        <link rel="stylesheet" href="css/screen.css">
-    </head>
-    <body>
-    <div id="shows">
-        <form id="addShow" action="#">
-            <label for="title">Title: </label><input id="title" type="text" />
-            <label for="genre">Genre: </label><input id="genre" type="text" />
-            <label for="stars">Stars: </label><input id="stars" type="text" />
-            <button id="add">Add</button>
-        </form>
-      <div class="showContainer">
-        <img src="img/placeholder.png"/>
-          <ul>
-            <li>Gilmore Girls</li>
-            <li>Drama</li>
-            <li>★★★★★</li>
-          </ul>
-        </div>
-      <script id="showTemplate" type="text/template">
-      <!-- replace the sample above with a template -->
-      </script>
-    </div>
-        <script src="js/lib/jquery.min.js"></script>
-        <script src="js/lib/underscore-min.js"></script>
-        <script src="js/lib/backbone-min.js"></script>
-        <script src="js/lib/backbone-localstorage-min.js"></script>
-        <script src="js/models/show.js"></script>
-        <script src="js/collections/Showcase.js"></script>
-        <script src="js/views/show.js"></script>
-        <script src="js/views/Showcase.js"></script>
-        <script src="js/app.js"></script>
-    </body>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Backbone.js Showcase</title>
+		<link rel="stylesheet" href="css/screen.css">
+	</head>
+	<body>
+	<div id="shows">
+		<form id="addShow" action="#">
+			<label for="title">Title: </label><input id="title" type="text" />
+			<label for="genre">Genre: </label><input id="genre" type="text" />
+			<label for="stars">Stars: </label><input id="stars" type="text" />
+			<button id="add">Add</button>
+		</form>
+<!--       <div class="showContainer">
+		<img src="img/placeholder.png"/>
+		  <ul>
+			<li>Gilmore Girls</li>
+			<li>Drama</li>
+			<li>★★★★★</li>
+		  </ul>
+		</div> -->
+	  <script id="showTemplate" type="text/template">
+
+			<img src="<%= coverImage %>"/>
+			  <ul>
+				<li><%= title %></li>
+				<li><%= genre %></li>
+				<% var starsNum = '' %>
+				<% for (var i = 0; i < stars; i++){ %>
+				<%  starsNum += '★' %>
+				<% } %>
+				<li><%= starsNum %></li>
+			  </ul>
+			<button id="edit">edit</button>
+			<button id="delete">delete</button>
+				<form id="editShow" class='hidden' action="#">
+					<label for="title">Title: </label><input id="title" type="text" />
+					<label for="genre">Genre: </label><input id="genre" type="text" />
+					<label for="stars">Stars: </label><input id="stars" type="text" />
+					<input id="update" type='submit' value='update'></input>
+				</form>
+
+	  </script>
+	</div>
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/underscore-min.js"></script>
+		<script src="js/lib/backbone-min.js"></script>
+		<script src="js/lib/backbone-localstorage-min.js"></script>
+		<script src="js/models/show.js"></script>
+		<script src="js/collections/Showcase.js"></script>
+		<script src="js/views/show.js"></script>
+		<script src="js/views/Showcase.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
